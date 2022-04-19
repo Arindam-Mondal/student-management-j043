@@ -1,0 +1,19 @@
+server:
+  port: 8086
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/student_j043
+    username: postgres
+    password: root
+    driverClassName: org.postgresql.Driver
+info:
+  app:
+    name: Spring Sample Application
+    description: This is my first spring boot application
+    version: 1.0.0
+#actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,env,beans
